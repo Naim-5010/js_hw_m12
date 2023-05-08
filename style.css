@@ -1,0 +1,114 @@
+body {
+    background-image: linear-gradient(rgba(135, 82, 82, 0.5), rgba(55, 53, 53, 0.8)), url("background.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 410px;
+    height: 340px;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 25px;
+    margin-top: 100px;
+    margin-left: 380px;
+    border-radius: 14px;
+
+}
+
+
+h1 {
+
+    color: aliceblue;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 26px;
+    text-transform: capitalize;
+    transition: .7s;
+    text-shadow: 1px 3px 3px white;
+}
+
+h1:hover {
+    background: rgba(243, 255, 71, 0.744);
+    padding: 4px;
+    color: black;
+    border-radius: 10px;
+    text-shadow: 1px 3px 3px rgb(0, 0, 0);
+
+}
+
+label {
+    display: block;
+    color: white;
+    font-family: arial, sans-serif;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+
+label:hover {
+    color: rgba(235, 157, 157, 0.795);
+
+}
+
+input {
+    width: 90%;
+    padding: 7px;
+    background-color: rgb(245, 240, 255);
+    color: white;
+    transition: .3s;
+    border: none;
+    box-shadow: 1px 3px 7px 3px rgba(255, 255, 255, 0.7);
+    color:black;
+
+}
+
+input:hover {
+    background: linear-gradient(rgba(8, 0, 255, 0.479), rgba(0, 92, 128, 0.655));
+    border-radius: 9px;
+    color: white;
+}
+
+
+button {
+    display: block;
+    font-family: arial black;
+    font-weight: bold;
+    color: #877d7d;
+    padding: 7px;
+    position: relative;
+    left: 65%;
+    top: 9%;
+    border: none;
+    box-shadow: 1px 3px 7px 3px rgba(255, 255, 255, 0.7);
+    transition:.4s;
+
+}
+
+button:hover {
+    background: linear-gradient(rgba(8, 0, 255, 0.479), rgba(0, 92, 128, 0.655));
+    border-radius: 9px;
+    color: white;
+    text-shadow: 1px 3px 3px white;
+}
+
+.weight {
+    width: 85%;
+    margin: auto;
+}
+
+.height {
+    width: 85%;
+    margin: auto;
+}
+
+.foter {
+    color: white;
+    font-family: arial, sans-serif;
+    position: absolute;
+    left: 35%;
+    top: 65.7%;
+    text-shadow: 1px 2px 4px white;
+}
+
+.foter:hover {
+    color: rgba(235, 157, 157, 0.795);
+
+}

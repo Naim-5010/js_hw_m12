@@ -5,11 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>BMI CALCULATOR</title>
 </head>
-
 <body>
-    <p>hello</p>
+
+    <div class="container">
+        <h1>calculate your body mass index</h1>
+
+        <div class="weight">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="weight" id="weight" min="0" max="100" placeholder="Enter Your Weight">
+
+        </div>
+        
+        <div class="height">
+        <label for="height">Height (m)</label>
+        <input type="number" name="height" id="height" min="0" max="15" placeholder="Enter Your Height">
+
+        </div>
+
+        <button  id="calculateBtn" onclick="calculateBMI()">CALCULAT</button>
+
+        <div class="foter">
+            <span id="result">YOU BMI IS: HERE</span>
+        </div>
+    </div>
+
+
+
+    <script>
+     var calculateBtn = document.getElementById("calculateBtn");
+        var weightInput = document.getElementById("weight");
+        var heightInput = document.getElementById("height");
+        var resultElement = document.getElementById("result");
+
+        function calculateBMI() {
+            var weight = parseFloat(weightInput.value);
+            var height = parseFloat(heightInput.value);
+
+            if (isNaN(weight) || isNaN(height) || height === 0) {
+                resultElement.textContent = "Invalid input";
+                return;
+            }
+
+            var bmi = weight / (height * height);
+            resultElement.textContent = `Your BMI is ${bmi.toFixed(2)}`;
+        }
+
+    </script>
+    
 </body>
 
 </html>
